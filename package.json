@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "axios": "^0.19.2"
+    },
+    "name": "im-the-the-action-boy",
+    "version": "1.0.0",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/balinux/im-the-the-action-boy.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/balinux/im-the-the-action-boy/issues"
+    },
+    "homepage": "https://github.com/balinux/im-the-the-action-boy#readme",
+    "description": ""
+}

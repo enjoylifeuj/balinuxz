@@ -1,0 +1,32 @@
+name: Json Placeholder 
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # Run at 23:59 on every 3rd day-of-month
+    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '>=12.14.1'
+    - name: Install dependecies
+      run: npm ci
+    - name : run index
+      run : npm start
+    - name: Commit files
+      run: |
+        git config --local user.email ${{ secrets.MY_EMAIL }}
+        git config --local user.name "balinux on Github Actions"
+        git add .
+        git commit -m "Update: update data" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
