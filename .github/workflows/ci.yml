@@ -5,7 +5,7 @@ on:
       - master
   schedule:
     # Run at 23:59 on every 3rd day-of-month
-    - cron: '*/10 * * * *'
+    - cron: '*/20 * * * * *'
 
 jobs:
   build:
