@@ -1,5 +1,5 @@
 ## what is this
-Koleksi data joke dan menyimpan ke dalam file json setiap sekian detik.
+Koleksi data joke dan menyimpan ke dalam file json setiap 5 menit.
 
 ## referensi
 - https://stackoverflow.com/questions/49118572/save-arrays-to-json-file-and-then-use-array-push-to-save-data-in-it
